@@ -92,6 +92,8 @@ export default {
 .top-footer {
     background-image: url(/footer-bg.jpg);
     position: relative;
+    height: 480px;
+    z-index: -1;
 
 }
 
@@ -127,8 +129,8 @@ h3:hover {
 
 .bottom-footer {
     background-color: rgba(48, 48, 48, 255);
-    position: absolute;
-    top: 970px;
+
+    top: 97px;
     width: 100%;
 }
 

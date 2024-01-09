@@ -2,12 +2,14 @@
 import AppHeader from "./components/AppHeader.vue"
 import AppMain from "./components/AppMain.vue"
 import AppFooter from "./components/AppFooter.vue"
+import AppFasciaAzzurra from "./components/AppFasciaAzzurra.vue"
 
 export default {
   components: {
     AppHeader,
     AppMain,
-    AppFooter
+    AppFooter,
+    AppFasciaAzzurra,
   }
 }
 </script>
@@ -15,6 +17,7 @@ export default {
   <div>
     <AppHeader/>
     <AppMain/>
+    <AppFasciaAzzurra/>
     <AppFooter/>
 
   </div>
