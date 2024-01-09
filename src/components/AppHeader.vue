@@ -7,7 +7,7 @@ export default {
                 {
                     label: "CHARACTERS",
                     url: "#",
-                    current: false
+                    current: true
                 },
                 {
                     label: "COMICS",
@@ -17,42 +17,42 @@ export default {
                 {
                     label: "MOVIES",
                     url: "#",
-                    current: false
+                    current: true
                 },
                 {
                     label: "TV",
                     url: "#",
-                    current: false
+                    current: true
                 },
                 {
                     label: "GAMES",
                     url: "#",
-                    current: false
+                    current: true
                 },
                 {
                     label: "COLLECTIBLES",
                     url: "#",
-                    current: false
+                    current: true
                 },
                 {
                     label: "VIDEOS",
                     url: "#",
-                    current: false
+                    current: true
                 },
                 {
                     label: "FANS",
                     url: "#",
-                    current: false
+                    current: true
                 },
                 {
                     label: "NEWS",
                     url: "#",
-                    current: false
+                    current: true
                 },
                 {
                     label: "SHOP",
                     url: "#",
-                    current: false
+                    current: true
                 },
             ]
 
@@ -67,7 +67,7 @@ export default {
                 <div class="col-3 ">
                     <img src="/dc-logo.png" alt="">
                 </div>
-                <div class="col-9">
+                <div class="col-9 d-flex align-items-center ">
                     <ul>
                         <li v-for="link, index in links" :key="index">
                             <a :class="link.current ? 'active' : ' ' "  :href="link.url">
@@ -93,16 +93,19 @@ ul {
     display: flex;
     justify-content: end;
     list-style: none;
-    height: 100%;
-    align-items: center;
+
+
 
     li a {
         padding: 10px;
+        padding-bottom: 50px;
         text-decoration: none;
 
 
-        &.active {
+
+        &.active:hover {
             color: $colore-primario;
+            border-bottom: 4px solid $colore-primario;
         }
     }
 
