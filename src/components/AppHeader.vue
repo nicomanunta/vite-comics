@@ -67,7 +67,7 @@ export default {
                 <div class="col-3 ">
                     <img src="/dc-logo.png" alt="">
                 </div>
-                <div class="col-9 d-flex align-items-center ">
+                <div class="col-9 d-flex align-items-center justify-content-end  ">
                     <ul>
                         <li v-for="link, index in links" :key="index">
                             <a :class="link.current ? 'active' : ' ' "  :href="link.url">
@@ -91,7 +91,7 @@ header {
 
 ul {
     display: flex;
-    justify-content: end;
+
     list-style: none;
 
 
