@@ -91,6 +91,9 @@ export default {
         <div class="jumbotron">
             <img class="img-jumbotron" src="/public/jumbotron.jpg" alt="">
         </div>
+        <div>
+            <span>current series</span>
+        </div>
         <div class="fumetti">
             <div class="container">
                 <div class="row py-5">
@@ -114,7 +117,16 @@ export default {
 
 }
 
-
+span {
+    text-transform: uppercase;
+    background-color: $colore-primario;
+    color: $colore-secondario;
+    padding: 10px 12px;
+    font-weight: 700;
+    position: relative;
+    top: 10px;
+    left: 70px;
+}
 
 .color-button {
     text-transform: uppercase;
